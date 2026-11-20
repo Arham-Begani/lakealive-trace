@@ -1,2 +1,12 @@
 node_modules/
 artifacts/
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+submission/*/qa/
+submission/*/Trace-source.zip
