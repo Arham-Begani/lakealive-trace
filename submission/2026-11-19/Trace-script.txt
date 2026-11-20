@@ -1,0 +1,15 @@
+Three inlets feed a lake. Your sample shows an elevated signal, but you can afford only four more tests. Where do you go next? I'm Arham Begani, a solo participant in the High School track, addressing the Water Quality challenge. My project is Trace by LakeAlive: a way to make the next sampling decision understandable.
+
+Trace is a working browser prototype for a monitoring coordinator. This demonstration uses a fictional network and synthetic readings, not measurements from a real lake. The reference and lake-entry observations leave seven modeled explanations, including combinations of branches. The goal is to choose a useful next question within the available budget and access constraints.
+
+Here, Trace recommends the west inlet. Open its reasoning: the test separates explanations that include this branch from those that don't. I load the scenario's simulated reading and save its full interval. Seven possibilities become three. The recommendation then moves north. I record the north and east samples too. One modeled explanation remains: North.
+
+That does not prove a source. Let me challenge the evidence. In the notebook, I revise the north reading, widen its interval, and flag it for review. Advice pauses. The original reading stays in the history, and the revision does not charge another sample. The exported case includes the assumptions, observations and unresolved questions for another person to inspect.
+
+Now watch the contradictory scenario. The lake-entry signal is elevated, but west and north readings are low. East seems to fit by exclusion, so Trace asks for a direct cross-check. That reading is also low. Now no modeled explanation fits. Trace says, “The evidence does not fit.” It tells us to review the measurements and assumptions instead of blaming a branch.
+
+Underneath, a deterministic interval model compares eight possible branch combinations. It ranks affordable sites with confirmed access by the largest group that could remain after a test. The simulator is separate: the planner never sees the hidden answer. The app runs locally without an API key. Adaptive sampling already exists; my contribution is the workflow that makes its assumptions and corrections inspectable.
+
+The software has twenty-nine passing automated tests, plus a documented Chromium check. In seventy-two synthetic cases, Trace and a fixed sequence each reached twenty-nine compatible single explanations, with three still awaiting cross-checks. Trace used fewer average credits, but unresolved cases and early stops affect that number. This is a software demonstration, not evidence of real-world accuracy.
+
+The next step is to work with monitoring coordinators on a validated model and sampling protocol, then test whether people understand the recommendations and recognize uncertainty. No field pilot is claimed. The prototype and these materials used AI assistance, documented in the deck. Trace's promise is simple: make each limited sample lead to a better-informed next decision.
