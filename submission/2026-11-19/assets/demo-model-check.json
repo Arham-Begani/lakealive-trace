@@ -1,0 +1,95 @@
+{
+  "note": "Direct model execution and import parser round-trip. Not a graphical browser or native file-chooser test.",
+  "appCommit": "94d6db0",
+  "steps": [
+    {
+      "name": "start",
+      "remaining": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "status": "active",
+      "spent": 0,
+      "next": "A",
+      "crossCheck": null
+    },
+    {
+      "name": "first-signal after A",
+      "remaining": [
+        2,
+        4,
+        6
+      ],
+      "status": "active",
+      "spent": 1,
+      "next": "B",
+      "crossCheck": null
+    },
+    {
+      "name": "first-signal after B",
+      "remaining": [
+        2,
+        6
+      ],
+      "status": "active",
+      "spent": 2,
+      "next": "C",
+      "crossCheck": null
+    },
+    {
+      "name": "first-signal after C",
+      "remaining": [
+        2
+      ],
+      "status": "narrowed",
+      "spent": 3,
+      "next": null,
+      "crossCheck": null
+    },
+    {
+      "name": "flagged revision",
+      "remaining": [
+        2
+      ],
+      "status": "review",
+      "spent": 3,
+      "next": null,
+      "crossCheck": null
+    },
+    {
+      "name": "contradiction after A",
+      "remaining": [
+        2,
+        4,
+        6
+      ],
+      "status": "active",
+      "spent": 1,
+      "next": "B",
+      "crossCheck": null
+    },
+    {
+      "name": "contradiction after B",
+      "remaining": [
+        4
+      ],
+      "status": "crosscheck",
+      "spent": 2,
+      "next": null,
+      "crossCheck": "C"
+    },
+    {
+      "name": "contradiction after C",
+      "remaining": [],
+      "status": "conflict",
+      "spent": 3,
+      "next": null,
+      "crossCheck": null
+    }
+  ]
+}
