@@ -1,0 +1,235 @@
+{
+  "voice": "Josh - Warm, Smooth and Steady",
+  "provider": "ElevenLabs",
+  "narration_source_seconds": 175.072625,
+  "narration_tempo": 0.9,
+  "intro_seconds": 2.0,
+  "tail_seconds": 3.0,
+  "footage": "Real Chromium tab capture; synthetic demonstration; waits trimmed and playback retimed. No UI results fabricated.",
+  "shots": [
+    [
+      0,
+      7.6,
+      "question"
+    ],
+    [
+      7.6,
+      19.1,
+      "title"
+    ],
+    [
+      19.1,
+      29.7,
+      [
+        0,
+        16.8
+      ],
+      "START WITH THE OBSERVATIONS"
+    ],
+    [
+      29.7,
+      39.7,
+      "overview"
+    ],
+    [
+      39.7,
+      42.2,
+      [
+        15.6,
+        17.7
+      ],
+      "CHOOSE THE NEXT TEST"
+    ],
+    [
+      42.2,
+      47.9,
+      [
+        17.7,
+        27.9
+      ],
+      "INSPECT THE REASON"
+    ],
+    [
+      47.9,
+      51.7,
+      [
+        28.2,
+        39.8
+      ],
+      "RECORD THE FULL INTERVAL"
+    ],
+    [
+      51.7,
+      55.9,
+      [
+        39.8,
+        46.9
+      ],
+      "SEVEN EXPLANATIONS BECOME THREE"
+    ],
+    [
+      55.9,
+      57.3,
+      [
+        47.1,
+        48.2
+      ],
+      "COLLECT NORTH"
+    ],
+    [
+      57.3,
+      58.8,
+      [
+        58.1,
+        59.8
+      ],
+      "THEN COLLECT EAST"
+    ],
+    [
+      58.8,
+      65.3,
+      [
+        60.1,
+        66.2
+      ],
+      "MODEL COMPATIBILITY IS NOT PROOF"
+    ],
+    [
+      65.3,
+      67.5,
+      [
+        66.3,
+        77.4
+      ],
+      "CHALLENGE THE EVIDENCE"
+    ],
+    [
+      67.5,
+      70.3,
+      [
+        77.5,
+        86.9
+      ],
+      "REVISE AND FLAG THE NORTH READING"
+    ],
+    [
+      70.3,
+      73.8,
+      [
+        87.1,
+        97.4
+      ],
+      "ORIGINAL READINGS STAY IN HISTORY"
+    ],
+    [
+      73.8,
+      76.4,
+      [
+        97.5,
+        105.7
+      ],
+      "ADVICE PAUSES FOR REVIEW"
+    ],
+    [
+      76.4,
+      82.7,
+      [
+        106.0,
+        115.7
+      ],
+      "A CASE ANOTHER PERSON CAN INSPECT"
+    ],
+    [
+      82.7,
+      85.0,
+      [
+        116.8,
+        125.7
+      ],
+      "A SECOND SYNTHETIC CASE"
+    ],
+    [
+      85.0,
+      86.7,
+      [
+        125.8,
+        133.5
+      ],
+      "LOW WEST READING"
+    ],
+    [
+      86.7,
+      88.6,
+      [
+        139.5,
+        143.2
+      ],
+      "LOW NORTH READING"
+    ],
+    [
+      88.6,
+      93.5,
+      [
+        143.3,
+        157.0
+      ],
+      "EAST STILL NEEDS A DIRECT CROSS-CHECK"
+    ],
+    [
+      93.5,
+      95.5,
+      [
+        157.1,
+        163.0
+      ],
+      "THE EAST CROSS-CHECK IS ALSO LOW"
+    ],
+    [
+      95.5,
+      104.6,
+      [
+        163.1,
+        169.2
+      ],
+      "NO MODELED EXPLANATION FITS"
+    ],
+    [
+      104.6,
+      109.6,
+      [
+        169.5,
+        182.1
+      ],
+      "AN EXPLICIT INTERVAL MODEL"
+    ],
+    [
+      109.6,
+      115.1,
+      [
+        182.2,
+        191.1
+      ],
+      "EVERY PREDICTION IS VISIBLE"
+    ],
+    [
+      115.1,
+      128.6,
+      "method"
+    ],
+    [
+      128.6,
+      152.6,
+      "evidence"
+    ],
+    [
+      152.6,
+      164.5,
+      "next"
+    ],
+    [
+      164.5,
+      175.072625,
+      "end"
+    ]
+  ]
+}

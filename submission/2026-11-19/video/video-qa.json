@@ -1,0 +1,25 @@
+{
+  "file": "Trace-Xylem-demo.mp4",
+  "duration_seconds": 199.5,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "bytes": 10051863,
+  "sha256": "b2032398b5f3ff1a1cdb316b4dad458b6badb206f0a216689e4142a25d6e78d5",
+  "voice": "Josh - Warm, Smooth and Steady / ElevenLabs",
+  "checks": [
+    "Full audio/video decode: no errors",
+    "20 time-specific frames visually inspected, including opening and ending",
+    "Narration transcribed locally and compared with the prepared script",
+    "Possible duplicated word rechecked in a focused audio segment; transcription artifact only",
+    "English optional caption stream present",
+    "Audio integrated loudness -17.04 LUFS, true peak -1.02 dBTP",
+    "Synthetic-data labeling and AI assistance/narration credits visible"
+  ],
+  "limitations": [
+    "Synthetic examples only; no field validation",
+    "Source screen capture is 1180x700, fitted into a 1920x1080 export",
+    "Speech completeness verified by local transcription; no claim of a human listening review",
+    "Not uploaded to a public video host or submitted to the event"
+  ]
+}

@@ -1,0 +1,283 @@
+1
+00:00:02,000 --> 00:00:03,378
+Three inlets feed a lake.
+
+2
+00:00:04,089 --> 00:00:06,644
+Your sample shows an elevated signal, but you
+
+3
+00:00:06,600 --> 00:00:08,311
+can afford only four more tests.
+
+4
+00:00:09,111 --> 00:00:09,756
+Where do you go next?
+
+5
+00:00:10,667 --> 00:00:13,444
+I'm Arham Begani, a solo participant in the
+
+6
+00:00:13,378 --> 00:00:16,156
+High School Track, addressing the Water Quality Challenge.
+
+7
+00:00:17,000 --> 00:00:19,956
+My project is Trace by LakeAlive, a way
+
+8
+00:00:19,911 --> 00:00:22,000
+to make the next sampling decision understandable.
+
+9
+00:00:23,356 --> 00:00:25,822
+Trace is a working browser prototype for a
+
+10
+00:00:25,733 --> 00:00:29,533
+monitoring coordinator. This demonstration uses a fictional network
+
+11
+00:00:29,533 --> 00:00:32,467
+and synthetic readings, not measurements from a real
+
+12
+00:00:32,444 --> 00:00:35,867
+lake. The reference and lake entry observations leave
+
+13
+00:00:35,867 --> 00:00:39,422
+seven modeled explanations, including combinations of branches.
+
+14
+00:00:40,467 --> 00:00:42,267
+The goal is to choose a useful next
+
+15
+00:00:42,267 --> 00:00:45,333
+question within the available budget and access constraints.
+
+16
+00:00:46,222 --> 00:00:48,622
+Here, Trace recommends the West Inlet.
+
+17
+00:00:49,111 --> 00:00:49,800
+Open its reasoning.
+
+18
+00:00:50,667 --> 00:00:53,533
+The test separates explanations that include this branch
+
+19
+00:00:53,533 --> 00:00:54,822
+from those that don't.
+
+20
+00:00:55,400 --> 00:00:57,956
+I load the scenario's simulated reading and save
+
+21
+00:00:57,956 --> 00:00:58,778
+its full interval.
+
+22
+00:00:59,578 --> 00:01:01,444
+Seven possibilities become three.
+
+23
+00:01:02,267 --> 00:01:03,867
+The recommendation then moves north.
+
+24
+00:01:04,644 --> 00:01:06,778
+I record the north and east samples too.
+
+25
+00:01:07,489 --> 00:01:10,178
+One modeled explanation remains: North.
+
+26
+00:01:10,800 --> 00:01:12,222
+That does not prove a source.
+
+27
+00:01:12,800 --> 00:01:13,778
+Let me challenge the evidence.
+
+28
+00:01:14,800 --> 00:01:16,867
+In the notebook, I revise the north reading,
+
+29
+00:01:17,244 --> 00:01:19,511
+widen its interval, and flag it for review.
+
+30
+00:01:20,200 --> 00:01:23,511
+Advice pauses. The original reading stays in the
+
+31
+00:01:23,422 --> 00:01:25,822
+history, and the revision does not charge another
+
+32
+00:01:25,822 --> 00:01:29,711
+sample. The exported case includes the assumptions, observations,
+
+33
+00:01:30,489 --> 00:01:33,156
+and unresolved questions for another person to inspect.
+
+34
+00:01:34,089 --> 00:01:35,822
+Now watch the contradictory scenario.
+
+35
+00:01:36,622 --> 00:01:39,089
+The lake entry signal is elevated, but west
+
+36
+00:01:39,089 --> 00:01:40,467
+and north readings are low.
+
+37
+00:01:40,467 --> 00:01:43,600
+East seems to fit by exclusion, so Trace
+
+38
+00:01:43,600 --> 00:01:45,422
+asks for a direct cross check.
+
+39
+00:01:46,089 --> 00:01:47,467
+That reading is also low.
+
+40
+00:01:48,222 --> 00:01:50,000
+Now no modeled explanation fits.
+
+41
+00:01:50,733 --> 00:01:53,267
+Trace says, the evidence does not fit.
+
+42
+00:01:53,889 --> 00:01:55,644
+It tells us to review the measurements and
+
+43
+00:01:55,644 --> 00:01:57,689
+assumptions instead of blaming a branch.
+
+44
+00:01:58,467 --> 00:02:02,111
+Underneath, a deterministic interval model compares eight possible
+
+45
+00:02:02,111 --> 00:02:05,889
+branch combinations. It ranks affordable sites with confirmed
+
+46
+00:02:05,889 --> 00:02:08,356
+access by the largest group that could remain
+
+47
+00:02:08,356 --> 00:02:09,244
+after a test.
+
+48
+00:02:10,089 --> 00:02:11,200
+The simulator is separate.
+
+49
+00:02:11,689 --> 00:02:13,667
+The planner never sees the hidden answer.
+
+50
+00:02:13,800 --> 00:02:16,822
+The app runs locally without an API key.
+
+51
+00:02:17,467 --> 00:02:19,267
+Adaptive sampling already exists.
+
+52
+00:02:19,978 --> 00:02:22,244
+My contribution is the workflow that makes its
+
+53
+00:02:22,244 --> 00:02:24,511
+assumptions and corrections inspectable.
+
+54
+00:02:25,156 --> 00:02:28,422
+The software has 29 passing automated tests, plus
+
+55
+00:02:28,422 --> 00:02:30,022
+a documented Chromium check.
+
+56
+00:02:30,800 --> 00:02:33,800
+In 72 synthetic cases, Trace and a fixed
+
+57
+00:02:33,800 --> 00:02:38,533
+sequence each reached 29 compatible single explanations, with
+
+58
+00:02:38,467 --> 00:02:40,089
+three still awaiting cross checks.
+
+59
+00:02:40,622 --> 00:02:44,089
+Trace used fewer average credits, but unresolved cases
+
+60
+00:02:44,089 --> 00:02:46,444
+and early stops affect that number.
+
+61
+00:02:47,133 --> 00:02:49,911
+This is a software demonstration, not evidence of
+
+62
+00:02:49,911 --> 00:02:50,822
+real world accuracy.
+
+63
+00:02:51,844 --> 00:02:53,644
+The next step is to work with monitoring
+
+64
+00:02:53,644 --> 00:02:56,667
+coordinators on a validated model and sampling protocol.
+
+65
+00:02:57,600 --> 00:03:00,711
+Then test whether people understand the recommendations and
+
+66
+00:03:00,711 --> 00:03:04,111
+recognize uncertainty. No field pilot is claimed.
+
+67
+00:03:04,978 --> 00:03:07,756
+The prototype and these materials used AI assistance,
+
+68
+00:03:08,333 --> 00:03:09,422
+documented in the deck.
+
+69
+00:03:10,311 --> 00:03:11,533
+Trace's promise is simple.
+
+70
+00:03:12,378 --> 00:03:14,511
+Make each limited sample lead to a better
+
+71
+00:03:14,511 --> 00:03:16,044
+informed next decision.
