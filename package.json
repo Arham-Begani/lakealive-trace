@@ -1,0 +1,6 @@
+{
+  "name": "lakealive-trace", "version": "0.1.0", "private": true, "type": "module",
+  "description": "An inspectable, local-first water sampling investigation simulator",
+  "scripts": {"test": "node --test tests/*.test.mjs", "build": "node scripts/build.mjs", "evaluate": "node scripts/evaluate.mjs", "dev": "node server.mjs"},
+  "engines": {"node": ">=20"}
+}
