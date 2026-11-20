@@ -1,10 +1,18 @@
 # Trace · by LakeAlive
 
+<img src="submission/2026-11-19/assets/Trace-logo-100.png" alt="Trace water-drop logo" width="64" height="64">
+
 **Follow the evidence. Make every sample count.**
 
 Trace is a complete browser-based investigation simulator for planning the next useful water sample under a limited budget. Its distinctive interaction is a decision you can inspect and challenge: collect a reading, see which upstream explanations remain compatible, correct the reading, and watch the case reopen.
 
 This is a new, independently implemented prototype for Arham Begani's Xylem project exploration. It is **not field validated**. All map locations, signal bands, measurements, costs and scenarios are fictional. Adaptive sampling is established practice; this project makes no novel-algorithm claim.
+
+![Trace working prototype with its synthetic-data label](docs/media/prototype.png)
+
+**[Download the pitch deck](submission/2026-11-19/Trace-pitch-deck.pdf)** · **[Download the narrated demo](submission/2026-11-19/video/Trace-Xylem-demo.mp4)** · **[Seven-step walkthrough](docs/how-it-works.md)** · **[Architecture](docs/architecture.md)**
+
+*The screenshot shows a real interaction using fictional data. One compatible explanation is not proof of a source.*
 
 ## Open it
 
@@ -89,4 +97,10 @@ The synthetic evaluation compares Trace with an accessible fixed A→B→C→J s
 
 Replace fictional predictions with a validated domain model and a defined sampling protocol. Work with qualified monitoring coordinators on comparable methods, reference sites, temporal assumptions, duplicates, blanks, safe access and actual costs. Obtain observations through authorized field work. Until then, use this as a transparent design prototype and training simulation.
 
-No competition entry, public deployment or GitHub publication was performed. This project was developed with AI assistance; keep an accurate contribution statement when preparing a submission under the event's rules. Third-party development dependencies retain their own licenses. Project licensing is left for its owner to choose.
+## Project status and attribution
+
+This repository contains the working source, portable app, tests, evidence, presentation and completed narrated demo. It is prepared for public GitHub publication; no live web deployment or competition entry is implied. Use the [submission index](submission/2026-11-19/README.md) to find the files and their exact status.
+
+Arham Begani is the solo project lead. ChatGPT/Codex assisted with ideation, implementation, tests, interface design and submission preparation. The video uses ElevenLabs-generated narration. Prior adaptive-sampling research is acknowledged; this project does not claim a novel algorithm.
+
+See [contributing](CONTRIBUTING.md) and the [validation roadmap](docs/roadmap.md). Third-party dependencies retain their own licenses. A project-wide open-source license has not yet been selected.
