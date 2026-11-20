@@ -1,0 +1,128 @@
+{
+  "publicationDate": "2026-11-20",
+  "method": "GitHub Git Data API import",
+  "note": "The existing local development history was imported in order because the environment had no authenticated Git push. File trees match the source commits exactly; GitHub commit IDs and publication timestamps differ. Original local hashes referenced in QA documents can be resolved using the mapping below. The initial remote setup commit and this publication-record commit are additional.",
+  "initialRepositoryCommit": "00f1b649269796d1a1551a07d85691cbef4f37eb",
+  "mapping": [
+    {
+      "local": "d16c74041a11f2ee08d60f842c8d685354162df5",
+      "published": "75bc2064572f5c10ef965a8cb843dfb7e91b997e",
+      "tree": "c3b504ec259181d4157ae53a4581528f8d1db3cf",
+      "message": "Define Trace scope, constraints, and implementation plan"
+    },
+    {
+      "local": "b2ab7e0a4559530827d81bb954fc7d68478b9fd8",
+      "published": "9abe80ce4b545e5fbc6846987ced64c771cf3b85",
+      "tree": "68d94b5de6fd37917ff264f77e855e4a94796c47",
+      "message": "Build Trace investigation workspace with interval reasoning and evidence history"
+    },
+    {
+      "local": "bcde7a7dba9052b37075dd30d7302c6b86a40c8e",
+      "published": "1e340adc3663ff5f1845ad6eca167e3e9895e8be",
+      "tree": "01b4e0095ccc6503cd6be266cbddd42cb17d4fee",
+      "message": "Resolve review findings in uncertainty, verification states, and case integrity"
+    },
+    {
+      "local": "94d6db0fda11d56d59a16a02b8ee1a0af886bb75",
+      "published": "99249b00406b41409f57cd7807654913f720bb03",
+      "tree": "674cef7996f6043ae077d43398f0d28d8b3babba",
+      "message": "Verify native browser flow and improve compact layout and keyboard focus"
+    },
+    {
+      "local": "3d1c0e944600eedb4ac82505a6fe4676665a72d4",
+      "published": "af084b668b948fc006e76e38c896e9fd1eaec6ae",
+      "tree": "8f0be961dcf1296e7e2c4c7c062ff82035c14b3c",
+      "message": "chore: exclude local caches and define submission asset handling"
+    },
+    {
+      "local": "536d4ba793be1fc6e41afd2775d96c175a4ad540",
+      "published": "20e351fc4c8c3c9a31401cbb8a66553ecbadc150",
+      "tree": "f42cc1812a7126e7722e3d66812aa68399563af9",
+      "message": "docs: explain the complete seven-step investigation workflow"
+    },
+    {
+      "local": "04f27afa62d90b536763f38233762c04659f3665",
+      "published": "06aa82cb54d045890864abf5c133e7264f7b39c2",
+      "tree": "b8ebc97752e026311a5dfef914b8e964276c1d92",
+      "message": "docs: document planner architecture and evidence boundaries"
+    },
+    {
+      "local": "bf81a8f9a5b48c81595c0a7dbdad7e25a09abcab",
+      "published": "5f42bb39938d3d14ba17bf83bd92d100ed654970",
+      "tree": "9543992bd8cf51aafcf73723b6833cbb4e2ba1a8",
+      "message": "docs: add contributor guidance and reproducible bug template"
+    },
+    {
+      "local": "bbf7fbcca71e4cab54dccf642e67d5fdd63949f9",
+      "published": "3c583ab792218ec661d3045e63e34da7859563b7",
+      "tree": "5856d5bfa817020f0ee5afe546d480793d0a3330",
+      "message": "ci: verify tests evaluation and portable build on GitHub"
+    },
+    {
+      "local": "b12f6b3689f276e19609c86c3ab1d4e402809eff",
+      "published": "8d3cde8a86f0e9017ef8d6229e3ce15bf757d7be",
+      "tree": "3a8aa4baeef405987b424b02eda79d9e8031149d",
+      "message": "docs: define validation roadmap with observable acceptance criteria"
+    },
+    {
+      "local": "8be3dd8d18a6820b0fee73e783441d7d50ecb011",
+      "published": "6b413606766492a5fc178772a5819c68b9fd0804",
+      "tree": "ad094a5b6436c4ff6c56eeb81b35f09cb873258e",
+      "message": "assets: publish Trace branding and prototype map artwork"
+    },
+    {
+      "local": "8eaceb397d366da17f3edb3299cb25fe57a018e2",
+      "published": "e42347680ce0207bf679268a4daeeb8af5c7fcb1",
+      "tree": "eb20e2344435d452229f40bc34ac7ca556738f0a",
+      "message": "docs: illustrate the problem and working prototype with labelled visuals"
+    },
+    {
+      "local": "643b8b18cff50a9056236fddcd650d896b842cdd",
+      "published": "97f6ef4c4c43c6331881a2ae3dddc094c73c25c0",
+      "tree": "f651e25e891bc7fe8b349827854a2ca36f5ddecb",
+      "message": "examples: include synthetic cases model checks and revision report"
+    },
+    {
+      "local": "67ffe69c6e15192739c451d242b0f61730d8d48b",
+      "published": "4887bc5bb565f1336531941baa39c8fbe4d496a8",
+      "tree": "be7fb8c39560cfccd28592fe8c7b076435c479df",
+      "message": "submission: add project narrative and expanded platform walkthrough"
+    },
+    {
+      "local": "27d34452d7dae72d7eca01b7915ffb7508bfd576",
+      "published": "abc9c2d15a7967b8ecd9945921f0aae23619a4f5",
+      "tree": "d09f587dc7dc5637dddeed9047ca100b1b2faacc",
+      "message": "submission: include pitch slides narration and original production guide"
+    },
+    {
+      "local": "b1450be592231035c688811527fd082906f32b3e",
+      "published": "937b19d205275374e065be28af109a756c9f80a7",
+      "tree": "29d68061d0f8ac12fafa5e445798d37278bb48fc",
+      "message": "build: include reproducible submission document and evidence generators"
+    },
+    {
+      "local": "c5470693a6d01ea4efb516bd277e1ec7e7461858",
+      "published": "b767a3c8cb01e440a3a91526bcbeda74da2ce724",
+      "tree": "ec809e2bdf5bc3767179da65ca8d973790971655",
+      "message": "media: add completed narrated demo captions and verification record"
+    },
+    {
+      "local": "a52042c50cb89fadcc9efe87d8e4cde9834412ed",
+      "published": "941691896e5dd58bf0f0354b89e6a1b8a0da527f",
+      "tree": "698b1b598b44793cef57f1dac435d762b6825134",
+      "message": "submission: organize finished assets and correct stale recording status"
+    },
+    {
+      "local": "cc89584bb046895b8abe83ba07b00e2f1a8a18f5",
+      "published": "7aad6242eccfe70f23c8b864a7cb4ae1ac191a21",
+      "tree": "77345f90b9c0f077bdd68e0b3d1b24f2c885582e",
+      "message": "docs: make the repository landing page visual and judge-ready"
+    },
+    {
+      "local": "3698d9bf55e55592148318577df494718c4a0971",
+      "published": "e014942cbe869c7f20d26eebafa6bf8c6e9569b5",
+      "tree": "5226f11230db7a418ccb228570446fba4d9952e5",
+      "message": "chore: record checksums and current status of the publication assets"
+    }
+  ]
+}

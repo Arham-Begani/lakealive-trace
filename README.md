@@ -99,7 +99,7 @@ Replace fictional predictions with a validated domain model and a defined sampli
 
 ## Project status and attribution
 
-This repository contains the working source, portable app, tests, evidence, presentation and completed narrated demo. It is prepared for public GitHub publication; no live web deployment or competition entry is implied. Use the [submission index](submission/2026-11-19/README.md) to find the files and their exact status.
+This repository contains the working source, portable app, tests, evidence, presentation and completed narrated demo. It is published on GitHub; no live web deployment or competition entry is implied. Historical local commit IDs in the verification records map to their published counterparts in [the publication history](docs/publication-history.json). Use the [submission index](submission/2026-11-19/README.md) to find the files and their exact status.
 
 Arham Begani is the solo project lead. ChatGPT/Codex assisted with ideation, implementation, tests, interface design and submission preparation. The video uses ElevenLabs-generated narration. Prior adaptive-sampling research is acknowledged; this project does not claim a novel algorithm.
 
