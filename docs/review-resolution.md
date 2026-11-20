@@ -19,3 +19,6 @@ Reviewed commit: b2ab7e0. One independent reviewer examined the specification, i
 Known verification limits accepted for this prototype: no native graphical browser, touch or native file-download pass in this environment; no field validation; no automatic competition eligibility/submission action. The reviewer did not judge those areas. Native browser checks remain a concrete pre-submission task rather than being claimed complete.
 
 Integration: fresh isolated repository remains on build/trace. No existing project was changed, no remote was pushed, and no public deployment or competition entry was made.
+
+
+Browser follow-up: the managed browser became available after this review. Desktop and narrow-layout Chromium checks and real downloads are now recorded in [browser-qa.md](browser-qa.md). This supersedes the browser-unavailable limits above; native import restoration, physical touch and other browsers remain unverified. No field validation or submission occurred.

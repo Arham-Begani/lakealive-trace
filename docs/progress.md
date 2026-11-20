@@ -11,3 +11,8 @@ Task 4 underway: independent review, final tests, packaging.
 
 Final independent review completed. All seven important findings corrected; minor UI explanation/accessibility findings repaired. Single-tab local editing documented. Final evaluation now uses exact weighted random trajectories: 72 cases per policy, 541 total trajectory records plus 3 stress cases. This supersedes the earlier 864-run seeded comparison. Trace and fixed produce 29 compatible singletons per 72 cases, 3 of each still requiring a cross-check; mean credits 1.736 vs 2.014. Exact random expectation: 22.5 compatible singletons, 3.5 check-pending, mean credits 2.155. These are synthetic cases with matched assumptions only.
 Final suite has 26 tests, including regressions observed failing before repair. Native graphical browser verification remains unavailable and explicitly documented. Source and portable app are ready for local delivery; no submission or publication.
+
+
+Browser QA follow-up: real Chromium became available. Desktop and 320/390/768 px framed layouts, sampling, invalid input, revisions, persistence, keyboard focus, the contradiction cross-check and native report/backup downloads were verified. Focus, narrow-screen selection, validation messaging and report revision labels were fixed. See docs/browser-qa.md for the evidence and exact limits. Native backup restoration remains unverified because file selection hung in the browser tool; no additional retry will be made in this pass. This supersedes earlier browser-unavailable notes.
+
+Final QA verification: all 29 tests passed, portable build completed at 83,208 bytes, and git diff --check passed.

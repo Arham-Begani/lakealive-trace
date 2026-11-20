@@ -24,11 +24,11 @@ Use actual screen captures adjacent to claims in the project page. Do not depict
 ## Claims ledger
 | Claim | Evidence | Limit |
 |---|---|---|
-| Interactive end-to-end investigation works | DOM flow tests against bundled app | Native browser/visual pass outstanding |
+| Interactive end-to-end investigation works | DOM tests and native Chromium sampling, revisions, cross-check and downloads | Native import, physical touch and other browsers remain unverified |
 | Corrections preserve original readings | Revision tests and exported report | Records remain editable, not certified evidence |
 | Advice respects budget and access inputs | State/model tests | Costs and access are simulated inputs |
 | Conflicting evidence produces a mismatch | Contradiction test and stress case | Unknown causes can mimic a modeled explanation |
 | Prototype is offline and needs no API key | Single-file bundle, no runtime asset requests | External documentation link is user initiated |
 | Comparative behavior is reproducible | docs/evaluation.md and evaluator | Synthetic same-model fixtures, not field validation |
 
-Pending for a credible final submission: real browser visual/accessibility pass, owner review of the working app, any allowed external feedback, authentic screenshots/video, final project narrative and slides, accurate assistance attribution, and manual entry by the participant. No entry has been made by this build.
+Pending for a credible final submission: owner review of the working app, a native backup-restore check, any allowed external feedback, authentic screenshots/video, final project narrative and slides, accurate assistance attribution, and manual entry by the participant. No entry has been made by this build.

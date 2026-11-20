@@ -10,3 +10,6 @@
 .crosscheck-notes{grid-column:1/-1;margin-top:14px}.crosscheck-notes p+p{margin-top:8px}.decision-panel>.button.secondary{margin-top:12px}.evidence-main .tag.warning{display:inline-block}
 
 .decision-panel>.button{grid-column:1/-1}
+
+.form-row{align-items:end}.compact-location{display:none}h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus{outline:none}
+@media(max-width:680px){.compact-location{display:block;margin:8px 12px 12px}.compact-location label{font-size:10px;color:var(--muted)}.compact-location select{min-height:44px;font-size:12px;background:#fbfcf6}.simulation-bar .text-button{min-height:44px;min-width:44px}.button.small,.selected-card .button{min-height:44px;font-size:10px}.close-button{min-height:44px;min-width:44px;right:7px;top:7px}.hero-copy,.selected-content p{font-size:11px}.map-legend{font-size:8px;line-height:1.6}.evidence-main .reading-value{overflow-wrap:anywhere}}

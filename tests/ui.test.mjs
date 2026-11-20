@@ -36,7 +36,7 @@ test('actual app flow collects readings, updates explanation, preserves revision
   u.click('[data-action="backup"]');assert.ok(u.downloads.includes('trace-first-signal.json'));
   u.click('[data-tab="report"]');u.click('[data-action="report-download"]');assert.ok(u.downloads.includes('trace-investigation-report.html'));
   assert.match(u.d.querySelector('.report-document').textContent,/superseded/);
-  const v=mount(JSON.stringify(u.snapshot()));try{assert.equal(v.d.querySelectorAll('.map-pin').length,6);assert.match(v.d.body.textContent,/1 still fit/);assert.deepEqual(v.errors,[]);}finally{v.dom.window.close();}
+  const v=mount(JSON.stringify(u.snapshot()));try{assert.equal(v.d.querySelectorAll('.map-pin').length,6);assert.match(v.d.body.textContent,/1 still fits/);assert.deepEqual(v.errors,[]);}finally{v.dom.window.close();}
   assert.deepEqual(u.errors,[]);
  }finally{u.dom.window.close();}
 });
@@ -74,5 +74,26 @@ test('conditions-changed control pauses the case and names its dialog for assist
   assert.match(u.d.querySelector('.decision-panel').textContent,/session is paused/);
   assert.ok(u.snapshot().conditionsChanged);
   assert.equal(u.d.querySelector('.selected-card [data-sample]').disabled,true);
+ }finally{u.dom.window.close();}
+});
+test('saving and changing views keep keyboard focus on the resulting content',()=>{
+ const u=mount();try{
+  u.collect('A');assert.equal(u.d.activeElement,u.d.querySelector('.decision-panel h2'));
+  u.click('[data-tab="notebook"]');assert.equal(u.d.activeElement,u.d.querySelector('.page-title h1'));
+ }finally{u.dom.window.close();}
+});
+test('loading a valid scenario reading clears a previous invalid-interval message',()=>{
+ const u=mount();try{
+  u.click('[data-sample="A"]');const f=u.d.querySelector('#sample-form');f.elements.low.value='.9';f.elements.high.value='.2';u.submit('#sample-form');
+  assert.ok(u.d.querySelector('.form-error').textContent);
+  u.click('[data-action="simulate"]');assert.equal(u.d.querySelector('.form-error').textContent,'');
+ }finally{u.dom.window.close();}
+});
+test('compact location picker selects the requested site',()=>{
+ const u=mount();try{
+  const select=u.d.querySelector('#location-picker');assert.ok(select);
+  select.value='C';select.dispatchEvent(new u.dom.window.Event('change',{bubbles:true}));
+  assert.equal(u.d.querySelector('.selected-card h3').textContent,'East inlet');
+  // Native mobile focus is checked in Chromium: JSDOM does not apply viewport media queries.
  }finally{u.dom.window.close();}
 });

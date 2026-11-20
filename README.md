@@ -68,7 +68,9 @@ The forward model assumes that any active connected branch produces an elevated 
 
 The synthetic evaluation compares Trace with an accessible fixed A→B→C→J sequence and exact uniform-random sampling over every legal action sequence under identical budgets and access restrictions. [Read the full evaluation](docs/evaluation.md), including its caveats. The generator deliberately contains no field data.
 
-**Verification limit:** this session did not expose the managed browser-control tool. The app was exercised through JSDOM, not a graphical browser. Dialog/download APIs are bridged in those DOM tests. Visual layout, native focus behavior, native downloads, touch behavior and cross-browser rendering still need a real browser pass. CSS targets desktop and small screens, but this is not a claim of visual QA.
+**Browser verification:** Chromium was exercised at desktop size and in 320, 390 and 768 px wide frames. Sampling, invalid input, revisions, reload persistence, keyboard focus, the contradiction/cross-check flow and real backup/report downloads were checked. Narrow views have a larger location selector. See [the browser QA record](docs/browser-qa.md).
+
+**Remaining limits:** native backup restoration could not be completed because the browser tool's file-selection operation hung. Backup parsing and round trips pass automated tests. Physical touch, Safari and Firefox have not been tested. The changed-conditions control is covered by DOM/state tests, not this browser pass. These checks do not establish field validity.
 
 ## Structure
 
