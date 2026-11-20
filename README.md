@@ -8,9 +8,9 @@ This is a new, independently implemented prototype for Arham Begani's Xylem proj
 
 ## Open it
 
-**No setup:** open `dist/index.html` in a modern browser. It contains the complete app, styles and code, needs no network, API key or account, and makes no background network requests. For reliable browser storage on all browsers, use the local server instead of a `file:` URL. Export JSON regularly; browser storage can be cleared or unavailable.
+**No setup:** open `dist/index.html` in a modern browser. It contains the complete app, styles and code, needs no network, API key or account, and makes no background network requests. For reliable browser storage on all browsers, use the local server instead of a `file:` URL. Export JSON regularly; browser storage can be cleared or unavailable. Edit in one tab at a time: this prototype does not merge concurrent local edits from multiple tabs.
 
-**Develop / run locally:** Node 20+.
+**Develop / run locally:** Node 24.15+ (24 LTS), or Node 22.22.2+ (22 LTS).
 
 ```sh
 npm ci
@@ -41,7 +41,7 @@ Other scenarios cover multiple branches, access restrictions and wide intervals.
 - Conservative interval compatibility across all eight subsets of three branches.
 - A worst-case decision rule with explicit predicted outcome groups; no uncalibrated probability percentages.
 - Cross-check of an inferred contributing branch before closing a case.
-- Review, mismatch, insufficient-budget and inconclusive states.
+- Review, mismatch, pending cross-check, changed-conditions, insufficient-budget and inconclusive states.
 - Revision history, settings history, local persistence, validated JSON import/export, and escaped evidence report.
 - Responsive layouts and reduced-motion styling; all functionality stays in the browser.
 
@@ -66,7 +66,7 @@ The forward model assumes that any active connected branch produces an elevated 
 
 `npm test` exercises the real calculation and state functions, the standalone build, and the application's DOM event flow. Tests cover conflicting evidence, broad intervals, multiple branches, budget/access enforcement, revision accounting, invalid backups, injection-safe report content, case reload, settings, sample forms, reports and cross-checks.
 
-The synthetic evaluation compares Trace with an accessible fixed A→B→C→J sequence and seeded uniform random sampling under identical budgets and access restrictions. [Read the full evaluation](docs/evaluation.md), including its caveats. The generator deliberately contains no field data.
+The synthetic evaluation compares Trace with an accessible fixed A→B→C→J sequence and exact uniform-random sampling over every legal action sequence under identical budgets and access restrictions. [Read the full evaluation](docs/evaluation.md), including its caveats. The generator deliberately contains no field data.
 
 **Verification limit:** this session did not expose the managed browser-control tool. The app was exercised through JSDOM, not a graphical browser. Dialog/download APIs are bridged in those DOM tests. Visual layout, native focus behavior, native downloads, touch behavior and cross-browser rendering still need a real browser pass. CSS targets desktop and small screens, but this is not a claim of visual QA.
 

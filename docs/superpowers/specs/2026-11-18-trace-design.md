@@ -15,3 +15,5 @@ Quiet editorial field atlas: cream paper, pine ink, teal water, orange route mar
 
 ## Acceptance
 Five scenarios (one source, multiple, restricted access, broad/ambiguous, contradictory). Functional site selection, access and budget controls, reading entry, edits, explicit review status, persistent state, reset, export report, import backup, method/evidence table. Unit and integration tests prove engine invariants, error boundaries, no duplicate counting, and safe imports. Deterministic evaluator reports synthetic performance and failure modes against fixed and random baselines. No claims of superiority without measurements. Build a fully portable offline HTML plus source archive.
+
+Cross-check refinement: a singleton inferred by exclusion remains explicitly pending if its branch is unmeasured, blocked, unaffordable, or observed with a nondiscriminating interval. Changing underlying water conditions pauses new sampling and requires a fresh case to resume. Backup limits use one 4 MiB UTF-8 cap across file import and local reload.

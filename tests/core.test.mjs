@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { analyze, rankActions, expectedBand } from '../src/model.js';
-import { createCase, recordSample, reviseSample, setAccess, setBudget, setTolerance, importCase, serializeCase } from '../src/state.js';
+import { createCase, recordSample, reviseSample, setAccess, setBudget, setTolerance, importCase, serializeCase, markConditionsChanged } from '../src/state.js';
 import { renderReport } from '../src/report.js';
 
 const reading = (low, high = low) => ({ low, high, method: 'simulated-colorimetry', note: '', review: false });
@@ -95,4 +95,41 @@ test('a surviving explanation inferred by exclusion gets an explicit cross-check
  const result=analyze(s);assert.deepEqual(result.remaining,[4]);assert.equal(result.verification.site.id,'C');
  s=recordSample(s,'C',reading(.08));assert.equal(analyze(s).status,'conflict');
  assert.equal(analyze(s).verification,null);
+});
+test('decimal boundary contact is compatible in both inference and recommendation scoring',()=>{
+ let s=setTolerance(createCase(),.11);
+ assert.equal(rankActions(s).length,0);
+ s=recordSample(s,'A',reading(.23,.29));
+ assert.deepEqual(analyze(s).remaining,[1,2,3,4,5,6,7]);
+});
+test('unaffordable or blocked singleton cross-checks remain explicitly pending in UI state and report',()=>{
+ let s=recordSample(setBudget(createCase(),2),'A',reading(.08));s=recordSample(s,'B',reading(.08));
+ assert.equal(analyze(s).status,'crosscheck');
+ assert.equal(analyze(s).verification.feasible,false);assert.equal(analyze(s).verification.reason,'budget');
+ assert.match(renderReport(s),/Cross-check pending/);
+ s=setAccess(setBudget(s,4),'C','blocked');
+ assert.equal(analyze(s).verification.reason,'blocked');
+ assert.match(renderReport(s),/blocked/);
+});
+test('a broad sample does not count as a discriminating cross-check',()=>{
+ let s=recordSample(createCase(),'A',reading(.08));s=recordSample(s,'B',reading(.08));s=recordSample(s,'C',reading(0,.9));
+ assert.deepEqual(analyze(s).remaining,[4]);assert.equal(analyze(s).status,'crosscheck');
+ assert.equal(analyze(s).verification.reason,'broad');
+ assert.match(renderReport(s),/cannot distinguish/);
+});
+test('a legitimately large case with maximum-length notes can reload its own backup',()=>{
+ let s=setBudget(createCase(),6);
+ for(const site of ['A','B','C','J'])s=recordSample(s,site,reading(.5));
+ for(const o of [...s.observations])for(let i=0;i<28;i++)s=reviseSample(s,o.id,{...reading(.5),note:'"'.repeat(1000)});
+ const backup=serializeCase(s);assert.ok(backup.length>300000);
+ assert.deepEqual(importCase(backup),s);
+});
+
+test('declaring changed water conditions suspends new sampling and survives backup restore',()=>{
+ const s=markConditionsChanged(createCase());
+ assert.equal(analyze(s).status,'conditions');assert.equal(rankActions(s).length,0);
+ assert.throws(()=>recordSample(s,'A',reading(.5)),/Conditions changed/);
+ assert.equal(importCase(serializeCase(s)).conditionsChanged,true);
+ assert.match(renderReport(s),/Archived-session/);
+ assert.equal(createCase(s.scenarioId).conditionsChanged,false);
 });

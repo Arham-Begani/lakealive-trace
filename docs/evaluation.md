@@ -4,15 +4,17 @@ Model: trace-intervals-1.0.
 
 Synthetic finite-model test. Not field validation or an accuracy estimate.
 
-8 source subsets × 3 budgets × 3 access patterns × 4 deterministic random seeds per policy; same outcome fixtures and costs. All policies cross-check an unmeasured active branch after singleton inference. Fixed visits A, B, C, J if accessible and affordable. Random samples uniformly among affordable unmeasured open sites.
+8 source subsets × 3 budgets × 3 access patterns = 72 equally weighted cases per policy. The random baseline exactly enumerates every legal trajectory with uniform probability at each action; leaves carry their product probability. All policies cross-check an unmeasured active branch after singleton inference if possible. Fixed visits A, B, C, J if accessible and affordable. Same outcome fixtures, costs and budgets.
 
-| Policy | Runs | Correct singleton | Unresolved | Wrong singleton | Mean credits |
-|---|---:|---:|---:|---:|---:|
-| trace | 288 | 116 | 172 | 0 | 1.736 |
-| fixed | 288 | 116 | 172 | 0 | 2.014 |
-| random | 288 | 96 | 192 | 0 | 2.142 |
+| Policy | Cases | Correct compatible singleton | Of these: check pending | Unresolved | Wrong singleton | Mean credits |
+|---|---:|---:|---:|---:|---:|---:|
+| trace | 72 | 29 | 3 | 43 | 0 | 1.736 |
+| fixed | 72 | 29 | 3 | 43 | 0 | 2.014 |
+| random-exact | 72 | 22.5 | 3.5 | 49.5 | 0 | 2.155 |
 
-Every test is generated from the same deliberately simple forward model; success on these cases does not demonstrate performance on real water networks. Repeated deterministic seeds duplicate fixed/Trace runs so each policy has the same case weighting. Means include early stops and unresolved cases; lower spend alone does not mean better investigation. There are no statistical significance claims.
+Random values are exact probability-weighted expectations (rounded for display), not counts from random seeds. There are 541 enumerated policy trajectories in the saved JSON. A compatible singleton is not a proven source; the pending-check column identifies singletons lacking a discriminating observation.
+
+All test measurements are generated from the same deliberately simple forward model. Success here does not demonstrate performance on real water networks. Means include early stops and unresolved cases; lower spend alone does not mean better investigation. The fixed baseline is a reasonable bracketing sequence, not a deliberately weak opponent. There are no statistical significance claims.
 
 ## Stress cases
 
@@ -24,4 +26,4 @@ The third stress case is an intentional counterexample: a closed-world model can
 
 ## Reproduce
 
-Run `npm run evaluate`. Full trajectories are written to `artifacts/evaluation.json`. The planner never receives the hidden mask: only the evaluator uses it after action selection to generate measurements. The demonstration is explicitly modeled decision support, not an LLM-generated chemistry claim.
+Run `npm run evaluate`. Full weighted trajectories are written to `artifacts/evaluation.json`. The planner never receives the hidden mask: only the evaluator uses it after action selection to generate measurements. This is modeled decision support, not an LLM-generated chemistry claim.

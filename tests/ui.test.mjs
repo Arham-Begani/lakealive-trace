@@ -8,7 +8,7 @@ const html=readFileSync('dist/index.html','utf8');
 function mount(saved){
  const errors=[],downloads=[];const console=new VirtualConsole();console.on('jsdomError',err=>errors.push(err));
  const dom=new JSDOM(html,{url:'https://trace.test/',runScripts:'dangerously',virtualConsole:console,beforeParse(w){
-  w.structuredClone=structuredClone;w.scrollTo=()=>{};
+  w.structuredClone=structuredClone;w.TextEncoder=TextEncoder;w.scrollTo=()=>{};
   // DOM-only tests: bridge browser-native dialog and download APIs, not app behavior.
   w.HTMLDialogElement.prototype.showModal=function(){this.open=true;};
   w.HTMLDialogElement.prototype.close=function(){this.open=false;};
@@ -57,5 +57,22 @@ test('the contradictory case visibly abstains instead of announcing a source',()
   assert.equal(u.d.querySelector('.result-name'),null);
   u.click('[data-tab="method"]');assert.equal(u.d.querySelectorAll('.model-table tbody tr').length,8);
   assert.deepEqual(u.errors,[]);
+ }finally{u.dom.window.close();}
+});
+test('a threshold-adjacent input displays the same precision that drives the model',()=>{
+ const u=mount();try{
+  u.click('[data-sample="A"]');const f=u.d.querySelector('#sample-form');f.elements.low.value='0.39999';f.elements.high.value='0.39999';u.submit('#sample-form');
+  u.click('[data-tab="notebook"]');assert.match(u.d.querySelector('.evidence-list').textContent,/0\.39999/);
+ }finally{u.dom.window.close();}
+});
+
+test('conditions-changed control pauses the case and names its dialog for assistive technology',()=>{
+ const u=mount();try{
+  u.click('[data-action="settings"]');
+  const modal=u.d.querySelector('#modal');assert.ok(modal.getAttribute('aria-labelledby'));
+  u.d.querySelector('#settings-form').elements.conditions.checked=true;u.submit('#settings-form');
+  assert.match(u.d.querySelector('.decision-panel').textContent,/session is paused/);
+  assert.ok(u.snapshot().conditionsChanged);
+  assert.equal(u.d.querySelector('.selected-card [data-sample]').disabled,true);
  }finally{u.dom.window.close();}
 });
