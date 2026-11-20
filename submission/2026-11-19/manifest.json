@@ -1,0 +1,141 @@
+{
+  "preparedDate": "2026-11-19",
+  "publicationPreparedDate": "2026-11-20",
+  "appCommit": "94d6db0",
+  "deadlineUTC": "2026-11-20T21:00:00Z",
+  "deadlineIndia": "2026-11-21T02:30:00+05:30",
+  "deckPages": 8,
+  "recordingGuidePages": 4,
+  "spokenWords": 458,
+  "actualVideoSeconds": 199.5,
+  "nativeBackupRestore": "unverified; automated parser and round-trip tests pass",
+  "video": "Completed narrated demo; see video/Trace-Xylem-demo.mp4",
+  "competitionSubmission": "Participant must publish the entry manually",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3872,
+      "sha256": "d4777804abbd466cf9e70e710a15a08b737bd3aff36bd62235feb168707d5f22"
+    },
+    {
+      "path": "Trace-how-it-works.md",
+      "bytes": 2175,
+      "sha256": "68385c09e0f6b5db6e60f28f8473ea30b78bde7b42560025bedb523093021214"
+    },
+    {
+      "path": "Trace-pitch-deck.pdf",
+      "bytes": 306539,
+      "sha256": "87d9e08aad513cec4fa6144d86a84b3a104f9f2681196529a84545533cd0da61"
+    },
+    {
+      "path": "Trace-project-page.md",
+      "bytes": 7113,
+      "sha256": "5220dd91bf95fdc18582b8f74898086d9292e31c78a8c5d15efa6977ad94098f"
+    },
+    {
+      "path": "Trace-recording-guide.pdf",
+      "bytes": 59032,
+      "sha256": "f117050e97c2dd78f701e8f4a6cd8660f315393d2b58ce1523554f00a8d0d8c2"
+    },
+    {
+      "path": "Trace-script.txt",
+      "bytes": 3012,
+      "sha256": "107f32557064a41a5c60410496237f4dd6fb6591b1a232511c07e90ede43c9e0"
+    },
+    {
+      "path": "Trace.html",
+      "bytes": 83208,
+      "sha256": "f790eec880e7f39ff7f3ff543ad8989fb5f5b4c7b391d0a34e7e6f49730a7ed1"
+    },
+    {
+      "path": "assets/Trace-logo-100.png",
+      "bytes": 2890,
+      "sha256": "74f7d677874d727cc081a406daaedcc3231bae68fa0811cd6164f426a3e9d392"
+    },
+    {
+      "path": "assets/Trace-logo-512.png",
+      "bytes": 16151,
+      "sha256": "3b3349aa8eb0558910be1a880c0bf0ca3ba146ddfdb08753eb15854186cecd16"
+    },
+    {
+      "path": "assets/Trace-logo.svg",
+      "bytes": 204,
+      "sha256": "d14267995f4baae635d5c35b73cf15f8e602ace22995396403a79051408a7285"
+    },
+    {
+      "path": "assets/demo-conflict-case.json",
+      "bytes": 2887,
+      "sha256": "8584e436c632b4bf8d1e0de117c64bdd2b12c657744d5e5d4b9b44f4f6bc2848"
+    },
+    {
+      "path": "assets/demo-model-check.json",
+      "bytes": 1695,
+      "sha256": "b36f95b9c8e060af5752130516c87e5d2559710b9a58db40cdaf24855dd80019"
+    },
+    {
+      "path": "assets/demo-north-case.json",
+      "bytes": 2880,
+      "sha256": "ca29d5fdddac52122c2b26bd983df4d33f6a65e07c44f3238252fec130127ef7"
+    },
+    {
+      "path": "assets/example-revision-report.html",
+      "bytes": 4937,
+      "sha256": "f0c18a593e3123dc58eccc5338c4102964dc9e34238b84168a73cd55b7d18b97"
+    },
+    {
+      "path": "assets/prototype-map-for-deck.svg",
+      "bytes": 8409,
+      "sha256": "038cc286c9cac30c76f5e25acfa19bf9bac14ec8de6b4c83ff9cc4969c807b93"
+    },
+    {
+      "path": "assets/prototype-map.png",
+      "bytes": 197911,
+      "sha256": "1dfdc3f75a0a18bba8dfaf868f0d3f5fdbea47fb61df763372225384634fded8"
+    },
+    {
+      "path": "assets/prototype-map.svg",
+      "bytes": 8618,
+      "sha256": "714369291dbbbac4c9ecfa0a10b689e0abd5fbdf2609af65c656a8e72ac99b45"
+    },
+    {
+      "path": "build-evidence.mjs",
+      "bytes": 2340,
+      "sha256": "dc0f0a1e4617bd628954cdb637016884bb78f35abd92e1676dfc1a2f0e005804"
+    },
+    {
+      "path": "build-pack.py",
+      "bytes": 13559,
+      "sha256": "d364cd192cfa14e6f526086d88eb88cf678eda1d0470da02e7dcb6f0b795cbcd"
+    },
+    {
+      "path": "content.py",
+      "bytes": 12747,
+      "sha256": "ea3749fe6aad9bce9baf57ca4e3e26b9fe6f7745e6107b90bfb76347196d1e1a"
+    },
+    {
+      "path": "video/README.md",
+      "bytes": 1124,
+      "sha256": "5b4702b2673b2928ab82c892f3cf35644ced3293a5be198ae2284af67788175c"
+    },
+    {
+      "path": "video/Trace-English.srt",
+      "bytes": 5377,
+      "sha256": "bc5236f45d48e3c984f0a455a2fa3fbde3b2bf339931b41955788f524ab34686"
+    },
+    {
+      "path": "video/Trace-Xylem-demo.mp4",
+      "bytes": 10051863,
+      "sha256": "b2032398b5f3ff1a1cdb316b4dad458b6badb206f0a216689e4142a25d6e78d5"
+    },
+    {
+      "path": "video/edit-manifest.json",
+      "bytes": 3152,
+      "sha256": "d24447d1f41603bf3351b03514a4a6f007f3ee216349153f8d62e5a1cd0ce1bd"
+    },
+    {
+      "path": "video/video-qa.json",
+      "bytes": 1088,
+      "sha256": "2a8dc58bfba7ffece165711fde8d5b6560d214f569368a5db3a2ea40991718dc"
+    }
+  ]
+}
