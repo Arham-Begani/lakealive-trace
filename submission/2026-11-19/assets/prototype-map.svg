@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="terrain" viewBox="0 0 800 560" role="group" aria-label="Fictional water network. Select a sampling location using the labeled points.">
+ <defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#b9c5b4" opacity=".45"/></pattern><linearGradient id="lake" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#9ecbc1"/><stop offset="1" stop-color="#c1ddd0"/></linearGradient><filter id="pin-shadow"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#244f44" flood-opacity=".14"/></filter></defs>
+ <rect width="800" height="560" fill="#edf0e5"/><rect width="800" height="560" fill="url(#grid)"/>
+ <g fill="none" stroke="#c8d1bd" stroke-width="1" opacity=".6"><path d="M-80 160C65 70 115 195 234 125S374-46 520 28 640 22 790-20"/><path d="M-80 173C68 83 116 210 238 139S377-30 520 42 640 38 790-5"/><path d="M-80 187C70 98 122 227 242 154S378-16 520 58 640 55 790 10"/><path d="M-70 510C40 360 108 330 154 405S245 544 342 465 325 380 400 342"/><path d="M-55 530C50 375 110 347 149 420S246 560 355 480 342 395 417 360"/><path d="M-38 550C68 388 117 368 145 438S248 582 367 496 360 410 429 382"/><path d="M620 370C670 303 815 320 820 477"/><path d="M632 387C679 320 801 337 802 478"/><path d="M645 404C687 340 787 357 785 480"/></g>
+ <g fill="#dce4d3"><path d="M78 295l-9 16h5l-8 12h24l-8-12h5z"/><path d="M78 320v8" stroke="#b0bda4"/><path d="M98 314l-9 16h5l-8 12h24l-8-12h5z"/><path d="M98 339v8" stroke="#b0bda4"/><path d="M65 331l-9 16h5l-8 12h24l-8-12h5z"/><path d="M65 356v8" stroke="#b0bda4"/><path d="M125 392l-9 16h5l-8 12h24l-8-12h5z"/><path d="M125 417v8" stroke="#b0bda4"/><path d="M146 418l-9 16h5l-8 12h24l-8-12h5z"/><path d="M146 443v8" stroke="#b0bda4"/><path d="M210 88l-9 16h5l-8 12h24l-8-12h5z"/><path d="M210 113v8" stroke="#b0bda4"/><path d="M234 64l-9 16h5l-8 12h24l-8-12h5z"/><path d="M234 89v8" stroke="#b0bda4"/><path d="M576 102l-9 16h5l-8 12h24l-8-12h5z"/><path d="M576 127v8" stroke="#b0bda4"/><path d="M596 120l-9 16h5l-8 12h24l-8-12h5z"/><path d="M596 145v8" stroke="#b0bda4"/><path d="M615 98l-9 16h5l-8 12h24l-8-12h5z"/><path d="M615 123v8" stroke="#b0bda4"/><path d="M716 363l-9 16h5l-8 12h24l-8-12h5z"/><path d="M716 388v8" stroke="#b0bda4"/><path d="M735 384l-9 16h5l-8 12h24l-8-12h5z"/><path d="M735 409v8" stroke="#b0bda4"/><path d="M708 400l-9 16h5l-8 12h24l-8-12h5z"/><path d="M708 425v8" stroke="#b0bda4"/><path d="M52 460l-9 16h5l-8 12h24l-8-12h5z"/><path d="M52 485v8" stroke="#b0bda4"/><path d="M286 205l-9 16h5l-8 12h24l-8-12h5z"/><path d="M286 230v8" stroke="#b0bda4"/><path d="M306 191l-9 16h5l-8 12h24l-8-12h5z"/><path d="M306 216v8" stroke="#b0bda4"/></g>
+ <path d="M-20 230C130 178 228 365 321 270S535 100 810 302" fill="none" stroke="#d4ccba" stroke-width="11"/><path d="M-20 230C130 178 228 365 321 270S535 100 810 302" fill="none" stroke="#f8f5e9" stroke-width="7"/>
+ <g fill="none" stroke-linecap="round"><path d="M180 -20 C80 90 260 140 185 270 S260 323 363 337" stroke="#a4c7bc" stroke-width="14"/><path d="M180 -20 C80 90 260 140 185 270 S260 323 363 337" stroke="#cadfd0" stroke-width="7"/><path d="M400 -20 C465 55 340 76 394 140 S410 230 363 337" stroke="#a4c7bc" stroke-width="14"/><path d="M400 -20 C465 55 340 76 394 140 S410 230 363 337" stroke="#cadfd0" stroke-width="7"/><path d="M790 105 C700 125 723 165 651 245 S590 360 482 435" stroke="#a4c7bc" stroke-width="14"/><path d="M790 105 C700 125 723 165 651 245 S590 360 482 435" stroke="#cadfd0" stroke-width="7"/><path d="M363 337 C390 382 433 378 482 435" stroke="#a4c7bc" stroke-width="14"/><path d="M363 337 C390 382 433 378 482 435" stroke="#cadfd0" stroke-width="7"/></g>
+ <path d="M481 422C523 441 602 423 629 455S713 465 724 515 678 578 557 590 392 575 404 524 437 482 448 457Z" fill="url(#lake)" stroke="#9cbbaf" stroke-width="1.3"/>
+ <path d="M489 459C529 478 580 452 610 482M464 491C490 509 540 485 565 507M606 518C632 530 665 512 683 526" fill="none" stroke="#dceee2" stroke-width="2" stroke-linecap="round"/>
+ <path d="M108 120C110 88 107 50 74 27" fill="none" stroke="#accabc" stroke-width="7"/>
+ <g font-family="DejaVu Sans" font-size="10" letter-spacing="2" fill="#7d8f7d"><text x="134" y="180" transform="rotate(25 134 180)">WEST REACH</text><text x="438" y="78">NORTH REACH</text><text x="593" y="335" transform="rotate(-40 593 335)">EAST REACH</text><text x="500" y="540" fill="#49766b" font-size="16" letter-spacing="4">MILLBROOK</text><text x="261" y="503" font-size="9" letter-spacing="1.2">SCHEMATIC · NOT TO SCALE</text></g>
+ <g transform="translate(742 42)" fill="#6b8273"><path d="M0 0l-5 20 5-3 5 3Z"/><text x="0" y="-7" text-anchor="middle" font-size="10" font-family="DejaVu Sans">N</text></g>
+ <g class="map-pin " tabindex="0" role="button" aria-label="Reference reach, open, sample recorded" aria-pressed="false" data-site="R">
+  
+  
+  <circle cx="108" cy="120" r="16" fill="#21685c" stroke="#fafaf0" stroke-width="4" filter="url(#pin-shadow)"/>
+  <text x="108" y="124" text-anchor="middle" font-family="DejaVu Sans" font-size="11" font-weight="700" fill="white">R</text>
+  <rect x="126" y="88" width="119.5" height="27" rx="5" fill="#fcfbf4" stroke="#dfe4d6"/>
+  <text x="138" y="105" fill="#294b3c" font-family="DejaVu Sans" font-size="11" font-weight="600">Reference reach</text>
+  <circle cx="120" cy="131" r="6" fill="#d7edd3" stroke="white" stroke-width="2"/>
+  </g><g class="map-pin selected" tabindex="0" role="button" aria-label="West inlet, open, recommended next" aria-pressed="true" data-site="A">
+  <circle class="pulse" cx="185" cy="270" r="26" fill="none" stroke="#b94f29" opacity=".24"/>
+  <circle cx="185" cy="270" r="23" fill="none" stroke="#b94f29" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <circle cx="185" cy="270" r="16" fill="#b94f29" stroke="#fafaf0" stroke-width="4" filter="url(#pin-shadow)"/>
+  <text x="185" y="274" text-anchor="middle" font-family="DejaVu Sans" font-size="11" font-weight="700" fill="white">A</text>
+  <rect x="203" y="238" width="88" height="27" rx="5" fill="#fcfbf4" stroke="#b94f29"/>
+  <text x="215" y="255" fill="#294b3c" font-family="DejaVu Sans" font-size="11" font-weight="600">West inlet</text>
+  
+  </g><g class="map-pin " tabindex="0" role="button" aria-label="North inlet, open" aria-pressed="false" data-site="B">
+  
+  
+  <circle cx="394" cy="140" r="16" fill="#506b58" stroke="#fafaf0" stroke-width="4" filter="url(#pin-shadow)"/>
+  <text x="394" y="144" text-anchor="middle" font-family="DejaVu Sans" font-size="11" font-weight="700" fill="white">B</text>
+  <rect x="412" y="108" width="94.3" height="27" rx="5" fill="#fcfbf4" stroke="#dfe4d6"/>
+  <text x="424" y="125" fill="#294b3c" font-family="DejaVu Sans" font-size="11" font-weight="600">North inlet</text>
+  
+  </g><g class="map-pin " tabindex="0" role="button" aria-label="East inlet, open" aria-pressed="false" data-site="C">
+  
+  
+  <circle cx="651" cy="245" r="16" fill="#506b58" stroke="#fafaf0" stroke-width="4" filter="url(#pin-shadow)"/>
+  <text x="651" y="249" text-anchor="middle" font-family="DejaVu Sans" font-size="11" font-weight="700" fill="white">C</text>
+  <rect x="607" y="277" width="88" height="27" rx="5" fill="#fcfbf4" stroke="#dfe4d6"/>
+  <text x="619" y="294" fill="#294b3c" font-family="DejaVu Sans" font-size="11" font-weight="600">East inlet</text>
+  
+  </g><g class="map-pin " tabindex="0" role="button" aria-label="Two-branch junction, open" aria-pressed="false" data-site="J">
+  
+  
+  <circle cx="363" cy="337" r="16" fill="#506b58" stroke="#fafaf0" stroke-width="4" filter="url(#pin-shadow)"/>
+  <text x="363" y="341" text-anchor="middle" font-family="DejaVu Sans" font-size="11" font-weight="700" fill="white">J</text>
+  <rect x="381" y="305" width="144.7" height="27" rx="5" fill="#fcfbf4" stroke="#dfe4d6"/>
+  <text x="393" y="322" fill="#294b3c" font-family="DejaVu Sans" font-size="11" font-weight="600">Two-branch junction</text>
+  
+  </g><g class="map-pin " tabindex="0" role="button" aria-label="Lake entry, open, sample recorded" aria-pressed="false" data-site="L">
+  
+  
+  <circle cx="482" cy="435" r="16" fill="#21685c" stroke="#fafaf0" stroke-width="4" filter="url(#pin-shadow)"/>
+  <text x="482" y="439" text-anchor="middle" font-family="DejaVu Sans" font-size="11" font-weight="700" fill="white">L</text>
+  <rect x="500" y="403" width="88" height="27" rx="5" fill="#fcfbf4" stroke="#dfe4d6"/>
+  <text x="512" y="420" fill="#294b3c" font-family="DejaVu Sans" font-size="11" font-weight="600">Lake entry</text>
+  <circle cx="494" cy="446" r="6" fill="#d7edd3" stroke="white" stroke-width="2"/>
+  </g></svg>
